@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welly Heriksen - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden">
+
+    <nav class="w-full bg-white/80 backdrop-blur-md fixed top-0 z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="image/logo.png.jpeg" alt="Logo Welly" class="h-10 w-auto">
+
+                <span class="text-xl font-bold text-gray-900">Welly Heriksen</span>
+            </a>
+
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="index.html" class="text-blue-600">Home</a>
+                <a href="hobby.html" class="text-gray-600 hover:text-blue-600 transition">Hobby</a>
+                <a href="gallery.html" class="text-gray-600 hover:text-blue-600 transition">Gallery</a>
+                <a href="#contact"
+                    class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Contact</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-gray-600 text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white border-t border-gray-100 p-6 flex flex-col space-y-4 shadow-lg absolute w-full">
+            <a href="index.html" class="text-blue-600 font-medium">Home</a>
+            <a href="hobby.html" class="text-gray-600 font-medium">Hobby</a>
+            <a href="gallery.html" class="text-gray-600 font-medium">Gallery</a>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-16 px-6 max-w-7xl mx-auto fade-in">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1">
+                <span
+                    class="bg-blue-100 text-blue-600 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Mahasiswa
+                    IMT-AI</span>
+                <h1 class="text-4xl md:text-6xl font-bold mt-6 leading-tight text-gray-900">
+                    Mahasiswa IT <br> yang Masih <br> Terus Belajar
+                </h1>
+                <p class="mt-4 text-gray-500 leading-relaxed max-w-md">
+                    Halo, kenalin aku Welly! Sekarang lagi sibuk kuliah jurusan Informatika di Universitas Ciputra. Tiap
+                    hari kerjaannya nugas, belajar ngoding, dan cari hiburan biar nggak stres.
+                </p>
+                <div class="mt-8 flex items-center space-x-4">
+                    <a href="gallery.html"
+                        class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition flex items-center gap-2">Lihat
+                        Tugas Kuliah <i class="fa-solid fa-arrow-right text-sm"></i></a>
+                    <a href="#about"
+                        class="border border-gray-300 text-gray-700 px-6 py-3 rounded-full hover:bg-gray-100 transition">Kenalan
+                        Yuk</a>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 relative flex justify-center">
+                <div class="absolute -top-4 -right-4 w-48 h-48 bg-purple-500 rounded-3xl -z-10"></div>
+                <div class="absolute -bottom-4 -left-4 w-48 h-48 bg-blue-600 rounded-3xl -z-10"></div>
+                <img src="image/aku.jpeg"
+                    alt="Setup Kuliah" class="rounded-3xl shadow-2xl object-cover w-full max-w-md h-[500px]">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 px-6 max-w-7xl mx-auto text-center fade-in">
+        <h2 class="text-3xl font-bold text-gray-900">Lagi Sibuk Apa Sekarang?</h2>
+        <p class="text-gray-500 mt-2 mb-10">Sebagian besar waktuku abis buat urusan kuliah dan nugas.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition text-left">
+                <div
+                    class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl mb-6">
+                    <i class="fa-brands fa-java"></i></div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Belajar OOP Java</h3>
+                <p class="text-gray-500 text-sm">Lagi pusing-pusingnya belajar logika pemrograman dan konsep OOP pakai
+                    Java buat ngerjain tugas praktikum kampus.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition text-left">
+                <div
+                    class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-code"></i></div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Ngulik Web Dev</h3>
+                <p class="text-gray-500 text-sm">Masih pemula, tapi lagi nyoba-nyoba bikin tampilan web pakai HTML dan
+                    Tailwind, ya contohnya kayak web tugas ini.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition text-left">
+                <div
+                    class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-users"></i></div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Jadi Mahasiswa dan Mendapatkan Relasi</h3>
+                <p class="text-gray-500 text-sm">Ikut bantu-bantu jadi mahasiswa di kampus. Hitung-hitung nambah
+                    relasi dan belajar problem-solving bareng.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gradient-to-r from-gray-900 to-blue-900 py-16 px-6 fade-in">
+        <div
+            class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/20">
+            <div class="py-4">
+                <h3 class="text-4xl font-bold text-white mb-2">Banyak</h3>
+                <p class="text-blue-200 text-sm">Tugas Praktikum</p>
+            </div>
+            <div class="py-4">
+                <h3 class="text-4xl font-bold text-white mb-2">Langganan</h3>
+                <p class="text-blue-200 text-sm">Tomoro Coffee & Ayam Geprek</p>
+            </div>
+            <div class="py-4">
+                <h3 class="text-4xl font-bold text-white mb-2">Sering</h3>
+                <p class="text-blue-200 text-sm">Error Pas Nge-Run Code</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-20 px-6 max-w-7xl mx-auto fade-in">
+        <div class="flex justify-between items-end mb-10">
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900">Tugas & Project</h2>
+                <p class="text-gray-500 mt-2">Beberapa hasil tugas dan iseng-iseng pas lagi belajar</p>
+            </div>
+            <a href="gallery.html"
+                class="hidden md:flex text-blue-600 hover:text-blue-700 font-medium items-center gap-2">
+                Lihat Galeri <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div
+                class="group relative rounded-2xl overflow-hidden h-80 shadow-lg cursor-pointer border border-gray-100">
+                <img src="image/pemandangan2.png.jpeg"
+                    alt="Tugas Java" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
+                    <h3 class="text-white text-xl font-bold">Tugas Pemrograman Java</h3>
+                    <p class="text-gray-300 text-sm">Bikin sistem sederhana buat menuhin nilai praktikum</p>
+                </div>
+            </div>
+            <div
+                class="group relative rounded-2xl overflow-hidden h-80 shadow-lg cursor-pointer border border-gray-100">
+                <img src="image/pemandangan.png.jpeg"
+                    alt="Tugas Web" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
+                    <h3 class="text-white text-xl font-bold">Project Web Portfolio</h3>
+                    <p class="text-gray-300 text-sm">Latihan bikin web pakai HTML dan Tailwind CSS</p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-6 text-center md:hidden">
+            <a href="gallery.html" class="text-blue-600 font-medium inline-flex items-center gap-2">
+                Lihat Galeri <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-6 text-center max-w-3xl mx-auto fade-in">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Let's Connect!</h2>
+        <p class="text-gray-500 mb-8">Kalau mau nanya-nanya soal tugas, diskusi materi kuliah, atau ngajak mabar santai,
+            langsung kontak aja ya.</p>
+        <a href="mailto:hello@wellyheriksen.com"
+            class="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-blue-700 transition shadow-lg hover:shadow-xl">
+            Hubungi Aku <i class="fa-solid fa-arrow-right ml-2"></i>
+        </a>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="col-span-1 md:col-span-2">
+                <h3 class="text-white text-xl font-bold mb-4">Welly Heriksen</h3>
+                <p class="text-sm text-gray-400 max-w-xs">Mahasiswa Informatika Universitas Ciputra. Sehari-hari nugas,
+                    belajar coding, main game, dan nyanyi.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Pintasan</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-blue-400 transition">Home</a></li>
+                    <li><a href="hobby.html" class="hover:text-blue-400 transition">Hobby</a></li>
+                    <li><a href="gallery.html" class="hover:text-blue-400 transition">Gallery</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Kontak</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-blue-400 transition">hello@wellyheriksen.com</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">Instagram: @wellyheriksen</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">LinkedIn: in/wellyheriksen</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+            &copy; 2026 Welly Heriksen. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
